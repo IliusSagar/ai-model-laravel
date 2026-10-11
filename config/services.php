@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'groq' => [
+        'key' => env('GROQ_API_KEY'),
+        'model' => env('GROQ_MODEL', 'openai/gpt-oss-20b'),
+        'url' => 'https://api.groq.com/openai/v1/chat/completions',
+    ],
+
     'postmark' => [
         'key' => env('POSTMARK_API_KEY'),
     ],
